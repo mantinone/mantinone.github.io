@@ -158,9 +158,13 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: #1EAEDB; }
+  color: #7d9b8b;
+  //color: #1EAEDB;
+}
 a:hover {
-  color: #0FA0CE; }
+  color: #4d8066;
+  //color: #0FA0CE;
+}
 
 
 /* Buttons
@@ -361,6 +365,9 @@ form {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .u-full-width {
   width: 100%;
+  box-sizing: border-box; }
+.u-full-height {
+  height: 100%;
   box-sizing: border-box; }
 .u-max-full-width {
   max-width: 100%;

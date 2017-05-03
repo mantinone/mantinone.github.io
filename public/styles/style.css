@@ -1,3 +1,45 @@
-div {
-  background-color: gray;
+body {
+  //background-color: #5c7e6d;
 }
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  padding: 5px;
+  margin-bottom: 3px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #cccccc;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.navbar-link {
+  padding: 5px 15px;
+}
+
+.navbar-link:hover {
+  background-color: #cccccc;
+}
+
+.headshot {
+  border-radius: 50%;
+  max-width: 50%;
+}
+
+.green {
+  background-color: #546f61;
+}
+
+.orange {
+  background-color: orange;
+}
+
