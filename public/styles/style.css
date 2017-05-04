@@ -22,21 +22,13 @@ body {
 }
 
 
-.center-v,
-.center-h {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center;
-  flex-wrap: wrap;
-}
 
 .project {
   border: 1px solid #dcd0cc;
   margin: 4px;
   padding: 4px;
   width: 200px;
+  height: 300px;
 }
 
 .image {
@@ -45,12 +37,27 @@ body {
   max-width: 200px;
 }
 
+.center-v,
+.center-h,
+.center-top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
 .center-h {
   flex-direction: row;
 }
 
 .center-v {
   flex-direction: column
+}
+
+.center-top {
+  justify-content: flex-start;
 }
 
 .navbar-link {
