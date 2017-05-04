@@ -1,5 +1,9 @@
 body {
-  //background-color: #5c7e6d;
+
+  font-family: 'Karla', sans-serif;
+  //font-family: 'Amiko', sans-serif;
+  background-color: #F9F7F7;
+  color: #352d2a;
 }
 
 .navbar {
@@ -14,16 +18,53 @@ body {
   border-bottom: 1px solid #cccccc;
 }
 
-.center {
+.master {
+  padding-top: 10px;
+}
+
+
+.center-v,
+.center-h {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
+.project {
+  border: 1px solid #dcd0cc;
+  margin: 4px;
+  padding: 4px;
+  width: 200px;
+}
+
+.image {
+  max-height: 200px;
+  min-height: 150px;
+  max-width: 200px;
+}
+
+.center-h {
+  flex-direction: row;
+}
+
+.center-v {
+  flex-direction: column
+}
 
 .navbar-link {
   padding: 5px 15px;
+}
+
+a {
+  text-decoration:  none;
+}
+
+.current-location {
+  background-color: #e8e8e8;
+  border-radius: 5px;
 }
 
 .navbar-link:hover {
