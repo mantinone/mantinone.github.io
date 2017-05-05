@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 function pressKey( key ){
   var button = document.getElementById('equals')
-  
+
 }
 
 function clickButton ( event ) {
