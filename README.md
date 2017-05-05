@@ -2,7 +2,8 @@
 Max Antinone's Personal Portfolio Website
 
 The site is currently accessibly through a test-domain at http://doomedtowander.nfshost.com/
-(It should be www.mantinone.com after I do some webspace juggling)
+
+(It should be www.mantinone.com after I do some webspace juggling to undo my old website)
 
 ## Specifications
 
