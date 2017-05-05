@@ -16,60 +16,83 @@
       "region": "California"
     },
     "profiles": [{
-      "network": "Twitter",
-      "username": "john",
-      "url": "http://twitter.com/john"
+      "network": "LinkedIn",
+      "username": "Max Antinone",
+      "url": "https://www.linkedin.com/in/max-antinone-6b35a09/" },
+      {"network": "Twitter",
+      "username": "Krail1",
+      "url": "https://twitter.com/Krail1"
     }]
   },
   "work": [{
-    "company": "Company",
-    "position": "President",
-    "website": "http://company.com",
-    "startDate": "2013-01-01",
-    "endDate": "2014-01-01",
-    "summary": "Description...",
+    "company": "Visual Concepts",
+    "position": "Animator",
+    "website": "https://vcentertainment.com/us/",
+    "startDate": "2015-03-14",
+    "endDate": "2015-10-01",
+    "summary": "Motion Capture Animations",
     "highlights": [
-      "Started the company"
+      "Shipped WWE 2k16"
     ]
   }],
   "volunteer": [{
-    "organization": "Organization",
-    "position": "Volunteer",
-    "website": "http://organization.com/",
-    "startDate": "2012-01-01",
-    "endDate": "2013-01-01",
-    "summary": "Description...",
+    "organization": "Game Developers Conference",
+    "position": "Conference Associate",
+    "website": "http://www.gdconf.com/",
+    "startDate": "2013-03-01",
+    "endDate": "n/a",
+    "summary": "Volunteer at GDC!",
     "highlights": [
-      "Awarded 'Volunteer of the Month'"
+      "Crazy line management stuff?"
     ]
   }],
   "education": [{
-    "institution": "University",
-    "area": "Software Development",
-    "studyType": "Bachelor",
-    "startDate": "2011-01-01",
-    "endDate": "2013-01-01",
-    "gpa": "4.0",
+    "institution": "Learners Guild",
+    "area": "Full-Stack Web Development",
+    "studyType": "Apprenticeship",
+    "startDate": "2016-09-12",
+    "endDate": "2017-07-07",
+    "gpa": "N/A",
     "courses": [
-      "DB1101 - Basic SQL"
+    ]},
+    {
+    "institution": "Florida Interactive Entertainment Academy at UCF",
+    "area": "Game Development",
+    "studyType": "Masters",
+    "startDate": "2009-08-20",
+    "endDate": "2010-12-20",
+    "gpa": "N/A",
+    "courses": [
+      "Animation",
+      "Rapid Prototyping",
+    ]},
+    {
+    "institution": "Willamette University",
+    "area": "Studio Art and Computer Science",
+    "studyType": "Bachelors",
+    "startDate": "2004-08-24",
+    "endDate": "2008-05-24",
+    "gpa": "3.8",
+    "courses": [
+      ""
     ]
   }],
   "awards": [{
-    "title": "Award",
-    "date": "2014-11-01",
-    "awarder": "Company",
-    "summary": "There is no spoon."
+    "title": "",
+    "date": "",
+    "awarder": "",
+    "summary": ""
   }],
   "publications": [{
-    "name": "Publication",
-    "publisher": "Company",
-    "releaseDate": "2014-10-01",
-    "website": "http://publication.com",
-    "summary": "Description..."
+    "name": "Attack of the Rocket Lizard",
+    "publisher": "Flash Portals",
+    "releaseDate": "2013-10-01",
+    "website": "http://www.kongregate.com/games/krail9/attack-of-the-rocket-lizard",
+    "summary": "A Flash Game that I made!"
   }],
   "skills": [{
     "name": "Web Development",
-    "level": "Master",
+    "level": "Junior",
     "keywords": [
       "HTML",
       "CSS",
@@ -81,10 +104,21 @@
     "level": "Native speaker"
   }],
   "interests": [{
-    "name": "Wildlife",
+    "name": "Music",
     "keywords": [
-      "Ferrets",
-      "Unicorns"
+      "Piano",
+      "Harmonica"
+    ]},
+    {
+    "name": "Digital Art",
+    "keywords": [
+      "Photoshop",
+      "Maya"
+    ]},
+    {
+    "name": "Tabletop Gaming",
+    "keywords": [
+      "D&D"
     ]
   }],
   "references": [{
