@@ -1,6 +1,14 @@
 body {
   font-family: 'Karla', sans-serif;
+  //font-family: 'Alice', sans-serif;
   //font-family: 'Amiko', sans-serif;
+  //font-family: 'Playfair Display', serif;
+  //font-family: 'Playfair Display SC', serif;
+  //font-family: 'Merriweather', serif;
+  //font-family: 'Merriweather Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
+  //font-family: 'Source Sans Pro', sans-serif;
+  //font-family: 'Open Sans', sans-serif;
   background-color: #F9F7F7;
   color: #352d2a;
   font-size: 1.7rem;
@@ -13,24 +21,44 @@ body {
   background-color: #352d2a;
 }
 
+.footer {
+  width: 100%;
+  padding: 7px 7px 12px;
+  margin-top: 8px;
+  background-color: #352d2a;
+  color: #F9F7F7;
+  display: flex;
+  justify-content: flex-end;
+}
+
 .master {
   padding: 10px 20px;
-  max-width: 700px;
+  margin: 0px 10px;
+  max-width: 720px;
+}
+
+button{
+  margin: 2px 0px;
 }
 
 .project {
-  border: 2px solid #dcd0cc;
+  //border-top: 2px solid #dcd0cc;
   border-radius: 4px;
   margin: 4px;
-  padding: 4px;
-  width: 280px;
-  height: 420px;
+  padding: 30px 5px 20px;
+  width: 100%;
+  }
+
+.project-blurb {
+  max-width: 300px;
+  text-align: center;
 }
 
 .image {
-  max-height: 200px;
-  min-height: 150px;
-  max-width: 200px;
+  max-width: 300px;
+  margin-right: 30px;
+  border: 3px solid #ccc;
+  border-radius: 10px;
 }
 
 .center-v,
@@ -41,8 +69,11 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  text-align: center;
   flex-wrap: wrap;
+}
+
+p{
+  text-align: center;
 }
 
 .center-h {
@@ -61,6 +92,31 @@ body {
   justify-content: flex-start;
 }
 
+.mobile-center {
+  display: flex;
+  align-items: center;
+}
+
+
+
+@media (min-width: 781px){
+  .project-blurb{
+    text-align: left;
+  }
+
+  .mobile-center {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 700px){
+  .image {
+    max-width: 370px;
+    max-height: 250px;
+  }
+}
+
 h1{
   font-size: 5.0rem;
   margin-bottom: 1rem;
@@ -68,6 +124,10 @@ h1{
 
 h2{
   margin-bottom: 0.5rem;
+}
+
+h5{
+  margin: 0px 30px;
 }
 
 .navbar-link {
