@@ -1,19 +1,12 @@
 html{
-  width: 99%;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
 }
 
 body {
-  width: 100%
-  font-family: 'Karla', sans-serif;
-  //font-family: 'Alice', sans-serif;
-  //font-family: 'Amiko', sans-serif;
-  //font-family: 'Playfair Display', serif;
-  //font-family: 'Playfair Display SC', serif;
-  //font-family: 'Merriweather', serif;
-  //font-family: 'Merriweather Sans', sans-serif;
-  font-family: 'Lato', sans-serif;
-  //font-family: 'Source Sans Pro', sans-serif;
-  //font-family: 'Open Sans', sans-serif;
+  width: 100%;
+  font-family: 'Merriweather Sans', sans-serif;
   background-color: #F9F7F7;
   color: #352d2a;
   font-size: 1.7rem;
@@ -21,14 +14,14 @@ body {
 
 .titlebar {
   width: 100%;
-  padding: 7px;
+  padding: 7px 0px;
   margin-bottom: 8px;
   background-color: #352d2a;
 }
 
 .footer {
   width: 100%;
-  padding: 7px 7px 12px;
+  padding: 7px 0px 12px;
   margin-top: 8px;
   background-color: #352d2a;
   color: #F9F7F7;
@@ -37,10 +30,9 @@ body {
 }
 
 .master {
-  padding: 10px 2px;
+  padding: 10px 0px;
   margin: 0px;
   max-width: 720px;
-  min-width: 98%;
 }
 
 button{
@@ -48,10 +40,8 @@ button{
 }
 
 .project {
-  //border-top: 2px solid #dcd0cc;
-  border-radius: 4px;
-  margin: 4px;
-  padding: 30px 5px 20px;
+  margin: 0px;
+  padding: 30px 0px 20px;
   width: 100%;
   }
 
@@ -112,6 +102,11 @@ p{
     width: 100%;
   }
 
+  .project{
+    margin: 4px;
+    padding: 30px 5px 20px;
+  }
+
   .mobile-center {
     display: flex;
     align-items: flex-start;
@@ -120,8 +115,7 @@ p{
 
 @media (min-width: 700px){
   .master {
-    padding: 10px 20px;
-    margin: 0px 10px;
+    padding: 10px 5px;
   }
 
   .image {
