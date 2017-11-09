@@ -6,6 +6,7 @@ html{
 
 body {
   width: 100%;
+
   font-family: 'Merriweather Sans', sans-serif;
   background-color: #F9F7F7;
   color: #352d2a;
@@ -14,7 +15,7 @@ body {
 
 .titlebar {
   width: 100%;
-  padding: 7px 0px;
+  padding: 10px 0px;
   margin-bottom: 8px;
   background-color: #352d2a;
 }
@@ -26,7 +27,7 @@ body {
   background-color: #352d2a;
   color: #F9F7F7;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
 .master {
@@ -53,7 +54,7 @@ button{
 .image {
   max-width: 300px;
   margin-right: 0px;
-  border: 3px solid #ccc;
+  border: 3px solid #cdc4c1;
   border-radius: 10px;
 }
 
@@ -93,39 +94,6 @@ p{
   align-items: center;
 }
 
-@media (min-width: 781px){
-  .project-blurb{
-    text-align: left;
-  }
-
-  html{
-    width: 100%;
-  }
-
-  .project{
-    margin: 4px;
-    padding: 30px 5px 20px;
-  }
-
-  .mobile-center {
-    display: flex;
-    align-items: flex-start;
-  }
-}
-
-@media (min-width: 700px){
-  .master {
-    padding: 10px 5px;
-  }
-
-  .image {
-    max-width: 370px;
-    max-height: 250px;
-    margin-right: 30px;
-
-  }
-}
-
 h1{
   font-size: 5.0rem;
   margin-bottom: 1rem;
@@ -140,13 +108,50 @@ h5{
   margin: 0px 30px;
 }
 
+@media (min-width: 716px){
+  .project-blurb{
+    text-align: left;
+  }
+
+  h5{
+    margin: 0px;
+  }
+
+  html{
+    width: 100%;
+  }
+
+  .project{
+    margin: 4px ;
+    padding: 30px 5px 30px;
+  }
+
+  .mobile-center {
+    display: flex;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 600px){
+  .master {
+    padding: 10px 5px;
+  }
+
+  .image {
+    max-width: 370px;
+    max-height: 250px;
+    margin-right: 30px;
+
+  }
+}
+
 .navbar-link {
   padding: 5px 15px;
 }
 
 .current-location {
   background-color: #B5B2B1;
-  color: #4d8066;
+  color: #7d9b8b;
   border-radius: 5px;
 }
 
@@ -159,14 +164,10 @@ h5{
   max-width: 200px;
   margin-bottom: 20px;
   margin-left: 20px;
+  border: 3px solid #cdc4c1;
 }
 
 .media-button {
   margin: 0px 5px;
   padding: 2px 10px;
 }
-
-.green {
-  background-color: #546f61;
-}
-
