@@ -1,17 +1,37 @@
+const emMonths = {
+  'January': 'Frostmoot' ,
+  'February': 'Deepsnow' ,
+  'March': 'Winterwane' ,
+  'April': 'Rainmoot' ,
+  'May': 'Palesun' ,
+  'June': 'Highsun' ,
+  'July': 'Firemoot' ,
+  'August': 'Firewane' ,
+  'September': 'Lowsun' ,
+  'October': 'Redfall' ,
+  'November': 'Snowmoot' ,
+  'December': 'Fellnight' ,
+}
+
 document.addEventListener('DOMContentLoaded', ( event ) => {
-  var butts = window.setInterval(updateClock, 500)
+  var butts = window.setInterval(updateClock, 700)
 })
-
-
 
 const updateClock = () => {
   let clockTag = document.getElementById('clock')
-  clockTag.innerText = moment.tz( "UTC").format("YYYY, dddd, MMMM Do hh:mm:ss A")
+  clockTag.innerText = currentGameTime()
 }
 
-const whatFunc = () => {
-  let startDate = "2018-02-01T00:00:00"
-  console.log(moment.tz(startDate, "UTC").format());
+const currentGameTime = () => {
+  let theDate = moment.tz("2018-02-09T00:00:00", 'UTC')
+  let difference = moment.tz('UTC').diff(theDate)
+  theDate.add(difference*2, 'ms')
+  theDate.subtract(131, 'days')
+  theDate.subtract(1777, 'Years')
+  let firstHalf = theDate.format('Y: ddd,')
+  let month = emMonths[theDate.format('MMMM')]
+  let lastHalf = theDate.format('Do, H:mm:ss (h:mm A)')
+  console.log('normal', moment.duration(difference));
+  console.log('double', moment.duration(difference*2));
+  return `Year ${firstHalf} ${month} ${lastHalf}`
 }
-
-whatFunc()
