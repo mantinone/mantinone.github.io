@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css?family=Alice|Amiko|Source+Sans+Pro|Karla|Playfair+Display|Playfair+Display+SC|Merriweather|Merriweather+Sans|Open+Sans|Lato|Source+Sans+Pro" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="../styles/skeleton.css">
+  <link rel="stylesheet" type="text/css" href="../styles/normalize.css">
+  <link rel="stylesheet" type="text/css" href="../styles/style.css">
+  <link rel="stylesheet" type="text/css" href="styles/artStyle.css">
+  <script src="js/artSlideshow.js">
+  <title>Max Antinone - Art Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://use.fontawesome.com/bb557706cf.js"></script>
+</html>
+<body class='center-v'>
+  <div class="titlebar"> </div>
+
+    <div class="master">
+
+      <div class="center-v">
+        <h3> <b>Max Antinone</b> </h3>
+        <h5>Artist Portfolio </h5>
+      </div>
+
+      <hr>
+
+      <div class="center-v">
+        <h4 id='title' class="artTitle"> Moonlight Over the Desert</h4>
+        <p id='medium' class="artTitle">Markers on Bristol Board</p>
+        <img id='image' class="portfolioImage" src="images/MoonDesert.jpg">
+
+      </div>
+
+
+
+      <div class="center-h thumbRow">
+        <button id="prev" class="navButton" onClick="updateSlides(-1)"><</button>
+        <div onClick="setSlide(0)"><img id='image' class="thumbImage" src="images/Octopus.jpg"></div>
+        <div onClick="setSlide(1)"><img id='image' class="thumbImage" nClick="setSlide(1)" src="images/BroomBoarding.png"></div>
+        <div onClick="setSlide(2)"><img id='image' class="thumbImage" nClick="setSlide(2)" src="images/Dancer.jpg"></div>
+        <div onClick="setSlide(3)"><img id='image' class="thumbImage" nClick="setSlide(5)" src="images/ProfessorHess.jpg"></div>
+        <div onClick="setSlide(4)"><img id='image' class="thumbImage" nClick="setSlide(6)" src="images/Seraphim.png"></div>
+        <div onClick="setSlide(5)"><img id='image' class="thumbImage" nClick="setSlide(7)" src="images/SunsetMoon.jpg"></div>
+        <div onClick="setSlide(6)"><img id='image' class="thumbImage active"  src="images/MoonDesert.jpg"></div>
+        <div onClick="setSlide(7)"><img id='image' class="thumbImage" nClick="setSlide(3)" src="images/LeatherArmchair.jpg"></div>
+        <button id="next" class="navButton" onClick="updateSlides(1)">></button>
+      </div>
+
+    </div>
+
+  <footer class='footer'>
+    <div class="center-h">
+      <h2>
+        <a class="media-button" href="https://github.com/mantinone"/>
+          <i class="fa fa-github" ></i>
+        </a>
+      </h2>
+      <h2>
+        <a class="media-button" href="https://www.linkedin.com/in/max-antinone-6b35a09/"/>
+          <i class="fa fa-linkedin-square" ></i>
+        </a>
+      </h2>
+      <h5><a href=mailto:mantinone@gmail.com>mantinone@gmail.com</a></h5>
+    </div>
+  </footer>
+</body>
