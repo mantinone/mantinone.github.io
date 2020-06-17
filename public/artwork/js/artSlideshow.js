@@ -1,7 +1,7 @@
 let imageData = [
-  {img:'MoonDesert.jpg',
-    title:'Moonlight Over the Desert',
-    medium:'Markers on Bristol Board'
+  {img:'Octopus.jpg',
+    title:'Octopus Destroying a City',
+    medium:'Photoshop'
   },
   {img:'BroomBoarding.png',
     title:'Broom Boarding',
@@ -9,14 +9,6 @@ let imageData = [
   },
   {img:'Dancer.jpg',
     title:'Dancer',
-    medium:'Photoshop'
-  },
-  {img:'LeatherArmchair.jpg',
-    title:'Armchair',
-    medium:'Pencils'
-  },
-  {img:'Octopus.jpg',
-    title:'Octopus Destroying a City',
     medium:'Photoshop'
   },
   {img:'ProfessorHess.jpg',
@@ -30,6 +22,14 @@ let imageData = [
   {img:'SunsetMoon.jpg',
     title:'Sunset on Morris',
     medium:'Photoshop'
+  },
+  {img:'MoonDesert.jpg',
+    title:'Moonlight Over the Desert',
+    medium:'Markers on Bristol Board'
+  },
+  {img:'LeatherArmchair.jpg',
+    title:'Armchair',
+    medium:'Pencils'
   }
 ]
 
@@ -42,12 +42,20 @@ document.addEventListener( "DOMContentLoaded", function(event) {
   imageContainer = document.getElementById('image')
   title = document.getElementById('title')
   medium = document.getElementById('medium')
+  showSlide(0)
   //let nextButton = document.getElementById('next')
   //let prevButton = document.getElementById('prev')
 })
 
 function updateSlides(n){
-  index += n;
+  showSlide(index += n)
+}
+
+function setSlide(n){
+  showSlide(index = n)
+}
+
+function showSlide(n){
   if (index < 0){
     index = imageData.length-1
   }
@@ -58,5 +66,12 @@ function updateSlides(n){
   imageContainer.src = `images/${imageData[index].img}`
   title.innerText = imageData[index].title
   medium.innerText = imageData[index].medium
+
+  let thumbs = document.getElementsByClassName('thumbImage')
+  for (const i of thumbs){
+    i.className = i.className.replace('active', '')
+  }
+
+  thumbs[index].className += " active"
 }
 

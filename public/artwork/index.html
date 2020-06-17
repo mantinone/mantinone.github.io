@@ -17,18 +17,33 @@
     <div class="master">
 
       <div class="center-v">
-        <h2> <b>Max Antinone</b> </h2>
-        <h4>Artist Portfolio </h4>
+        <h3> <b>Max Antinone</b> </h3>
+        <h5>Artist Portfolio </h5>
       </div>
+
+      <hr>
 
       <div class="center-v">
+        <h4 id='title' class="artTitle"> Moonlight Over the Desert</h4>
+        <p id='medium' class="artTitle">Markers on Bristol Board</p>
         <img id='image' class="portfolioImage" src="images/MoonDesert.jpg">
-        <h5 id='title'> Moonlight Over the Desert</h5>
-        <p id='medium'>Markers on Bristol Board</p>
+
       </div>
 
-      <button id="prev" onClick="updateSlides(-1)"><</button>
-      <button id="next" onClick="updateSlides(1)">></button>
+
+
+      <div class="center-h thumbRow">
+        <button id="prev" class="navButton" onClick="updateSlides(-1)"><</button>
+        <div onClick="setSlide(0)"><img id='image' class="thumbImage" src="images/Octopus.jpg"></div>
+        <div onClick="setSlide(1)"><img id='image' class="thumbImage" nClick="setSlide(1)" src="images/BroomBoarding.png"></div>
+        <div onClick="setSlide(2)"><img id='image' class="thumbImage" nClick="setSlide(2)" src="images/Dancer.jpg"></div>
+        <div onClick="setSlide(3)"><img id='image' class="thumbImage" nClick="setSlide(5)" src="images/ProfessorHess.jpg"></div>
+        <div onClick="setSlide(4)"><img id='image' class="thumbImage" nClick="setSlide(6)" src="images/Seraphim.png"></div>
+        <div onClick="setSlide(5)"><img id='image' class="thumbImage" nClick="setSlide(7)" src="images/SunsetMoon.jpg"></div>
+        <div onClick="setSlide(6)"><img id='image' class="thumbImage active"  src="images/MoonDesert.jpg"></div>
+        <div onClick="setSlide(7)"><img id='image' class="thumbImage" nClick="setSlide(3)" src="images/LeatherArmchair.jpg"></div>
+        <button id="next" class="navButton" onClick="updateSlides(1)">></button>
+      </div>
 
     </div>
 
